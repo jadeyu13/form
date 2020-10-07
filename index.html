@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="contactform.php" method="POST">
+        <label name="first-name" value="first-name">First Name</label>
+            <input id="first-name" type="text" placeholder="First Name" required>
+        <label name="last-name" value="last-name">Last Name</label>
+            <input id="last-name" type="text" placeholder="Last Name" required>
+            <br>
+            Male <input type="radio" name="Gender" value="male">
+            Female<input type="radio" name="Gender" value="female">
+            Other<input type="radio" name="Gender" value="Other">
+        <label for="email" value="email">your email</label>
+            <input type="email" placeholder="email" required>
+        <label for="password" value="password">Password:  </label>
+            <input type="password" minlength="5" maxlength="10" placeholder="must be between 5~10 Characters:)" required>
+        
+        <br>
+        Birthday:
+        <select name="month">
+            <option value="month"> Month</option>
+            <option value="january"> January</option>
+            <option value="march"> March</option>
+        </select>
+
+        <select name="day">
+            <option value="day"> Day</option>
+            <option value="02"> 02</option>
+            <option value="19"> 18</option>
+        </select>
+
+        <select name="year">
+            <option value="year"> Year</option>
+            <option value="1999"> 1999</option>
+            <option value="1987"> 1987</option>
+        </select>
+<br>
+I agree to the terms and conditions <input type="checkbox" name="terms" value="terms">
+
+<br>
+<button>Submit</button>
+</body>
+</html>
